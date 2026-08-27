@@ -1,19 +1,22 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { NexiLogo } from "@/components/nexi-logo"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const nav = [
-  { label: "Applications", href: "#applications" },
-  { label: "Structure", href: "#structure" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Contact", href: "#contact" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Network", href: "/network" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)
@@ -30,26 +33,24 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <a href="#top" aria-label="NEXI Corp home">
+        <Link href="/" aria-label="NEXI Corp home">
           <NexiLogo />
-        </a>
+        </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className={cn(
+                "text-sm transition-colors hover:text-foreground",
+                pathname === item.href ? "text-foreground" : "text-muted-foreground",
+              )}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
-        <Button
-          render={<a href="#contact" />}
-          nativeButton={false}
-          size="sm"
-          className="rounded-full font-medium"
-        >
+        <Button render={<Link href="/contact" />} nativeButton={false} size="sm" className="rounded-full font-medium">
           Engage NEXI
         </Button>
       </div>
