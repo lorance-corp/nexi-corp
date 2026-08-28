@@ -2,21 +2,20 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { NexiLogo } from "@/components/nexi-logo"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const nav = [
-  { label: "Portfolio", href: "/portfolio" },
+  { label: "Applications", href: "/#applications" },
+  { label: "Structure", href: "/#structure" },
+  { label: "Partners", href: "/#partners" },
   { label: "Network", href: "/network" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ]
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)
@@ -41,16 +40,18 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className={cn(
-                "text-sm transition-colors hover:text-foreground",
-                pathname === item.href ? "text-foreground" : "text-muted-foreground",
-              )}
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {item.label}
             </Link>
           ))}
         </nav>
-        <Button render={<Link href="/contact" />} nativeButton={false} size="sm" className="rounded-full font-medium">
+        <Button
+          render={<Link href="/contact" />}
+          nativeButton={false}
+          size="sm"
+          className="rounded-full font-medium"
+        >
           Engage NEXI
         </Button>
       </div>

@@ -31,8 +31,8 @@ export function Hero() {
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
               We build category-defining <span className="text-foreground">deep neuro techbio</span> — translating
-              living neural systems into computational substrates for biocomputers, digital avatars, defense, and
-              dual-use applications.
+              living neural systems into computational substrates spanning longevity, personalized medicine, precision
+              neurology, brain–computer interfacing, and defense.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -59,10 +59,10 @@ export function Hero() {
           <div className="animate-rise [animation-delay:120ms]">
             <div className="relative overflow-hidden rounded-2xl border border-border ring-glow">
               <Image
-                src="/images/brain-chip-hero.png"
-                alt="A neural network rendered as a glowing wireframe brain emerging from a silicon processor"
-                width={1280}
-                height={800}
+                src="/images/biocomputer.png"
+                alt="A glassy human brain wired directly into a silicon processor by fine neural interconnects"
+                width={905}
+                height={961}
                 priority
                 className="h-full w-full object-cover"
               />
@@ -81,7 +81,7 @@ export function Hero() {
         <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-4">
           {[
             { k: "In vitro", v: "Neural substrates" },
-            { k: "4 domains", v: "Bio · Avatar · Defense · Dual-use" },
+            { k: "8 domains", v: "Bio · Neuro · Medicine · Defense" },
             { k: "Holding", v: "Service contracts" },
             { k: "NEXI Biotech", v: "Operating entity" },
           ].map((s) => (
