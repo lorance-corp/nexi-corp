@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { NexiLogo } from "@/components/nexi-logo"
 import { site } from "@/lib/site"
+import { ecosystem } from "@/lib/portfolio"
 
 export function SiteFooter() {
   return (
@@ -30,6 +31,20 @@ export function SiteFooter() {
               Contact
             </Link>
           </nav>
+          <div className="flex flex-col gap-3">
+            <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Ecosystem</span>
+            {ecosystem.map((e) => (
+              <a
+                key={e.href}
+                href={e.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {e.name}
+              </a>
+            ))}
+          </div>
           <div className="flex flex-col gap-3">
             <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Connect</span>
             <a

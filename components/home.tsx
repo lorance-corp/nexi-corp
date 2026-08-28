@@ -73,9 +73,9 @@ export function Hero() {
         <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-4">
           {[
             { k: "1 flagship", v: "NEXI Biotech — in vitro human neural models" },
-            { k: "5 companies", v: "Modeling · Studies · Histology · Discovery" },
+            { k: "5 capabilities", v: "Studies · Histology · Pathology · Quantum · AI" },
             { k: "1 front door", v: "One intake, routed to the right team" },
-            { k: "Network", v: "Vetted consultants across CNS translation" },
+            { k: "Network", v: "Vetted partners & consultants, disclosed on engagement" },
           ].map((s) => (
             <div key={s.k} className="bg-card px-5 py-5">
               <dt className="font-display text-xl font-semibold text-foreground">{s.k}</dt>
@@ -104,6 +104,10 @@ export function Ecosystem() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Partner companies are listed by capability. Identities are shared once you engage — relationships in this
+          network are earned, not scraped.
+        </p>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {portfolio.map((c) => (
