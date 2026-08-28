@@ -17,9 +17,9 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'NEXI Corp — The Neuro Translation Ecosystem',
+  title: 'NEXI Corp — Deep Neuro TechBio',
   description:
-    'NEXI Corp is the IP holding company for NEXI Biotech and the partner marketplace connecting CNS programs with vetted platform companies, study partners, and consultants.',
+    'NEXI Corp is the holding company behind NEXI Biotech and the partner network translating living neural systems into deep neuro techbio — spanning longevity, personalized medicine, precision neurology, and brain–computer interfacing.',
   icons: {
     icon: [
       { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
