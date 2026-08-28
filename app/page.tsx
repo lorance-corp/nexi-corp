@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { Applications } from "@/components/applications"
 import { Structure } from "@/components/structure"
+import { Partners } from "@/components/partners"
 import { Capabilities } from "@/components/capabilities"
 import { Contact } from "@/components/contact"
 import { SiteFooter } from "@/components/site-footer"
@@ -14,6 +15,7 @@ export default function Page() {
         <Hero />
         <Applications />
         <Structure />
+        <Partners />
         <Capabilities />
         <Contact />
       </main>

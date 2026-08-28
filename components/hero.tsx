@@ -59,10 +59,10 @@ export function Hero() {
           <div className="animate-rise [animation-delay:120ms]">
             <div className="relative overflow-hidden rounded-2xl border border-border ring-glow">
               <Image
-                src="/images/hero-neuro.png"
-                alt="A luminous neural network rendered as a particle brain rising from a silicon processor"
-                width={1234}
-                height={726}
+                src="/images/biocomputer.png"
+                alt="A glassy human brain wired directly into a silicon processor by fine neural interconnects"
+                width={905}
+                height={961}
                 priority
                 className="h-full w-full object-cover"
               />
