@@ -3,6 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Compass, Handshake, Route, ShieldCheck } from "lucide-react"
 import { PageHero } from "@/components/page-hero"
 import { Button } from "@/components/ui/button"
+import { ecosystem } from "@/lib/portfolio"
 
 export const metadata: Metadata = {
   title: "Network — NEXI Corp",
@@ -86,6 +87,34 @@ export default function NetworkPage() {
               See who's in it
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pb-16">
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">Florida ecosystem</p>
+        <h2 className="mt-4 max-w-2xl font-display text-3xl font-bold tracking-tight text-balance md:text-4xl">
+          Rooted in the state we're building up.
+        </h2>
+        <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground text-pretty">
+          NEXI is woven into Florida's life science community — the exchanges, summits, and investor networks where
+          this ecosystem gets built.
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {ecosystem.map((e) => (
+            <a
+              key={e.href}
+              href={e.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
+            >
+              <h3 className="font-display text-base font-semibold text-foreground">{e.name}</h3>
+              <span className="mt-2 inline-block text-xs font-medium text-primary">
+                Visit
+                <span className="ml-1 inline-block transition-transform group-hover:translate-x-0.5">→</span>
+              </span>
+            </a>
+          ))}
         </div>
       </section>
 
