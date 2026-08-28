@@ -7,8 +7,8 @@ export function SiteFooter() {
         <div className="max-w-sm">
           <NexiLogo />
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Category-defining deep neuro techbio. The holding company for biocomputers, digital avatars, defense, and
-            dual-use applications.
+            Category-defining deep neuro techbio. The holding company for longevity, personalized medicine, precision
+            neurology, brain–computer interfacing, and defense applications.
           </p>
         </div>
         <div className="flex flex-wrap gap-10 text-sm">
