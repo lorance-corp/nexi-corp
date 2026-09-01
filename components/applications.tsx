@@ -60,7 +60,7 @@ const applications: Application[] = [
     title: "Biocomputers",
     icon: CircuitBoard,
     tagline: "Wetware compute at biological efficiency",
-    image: "/images/biocomputer.png",
+    image: "/images/hero-neuro.png",
     summary:
       "Living neural tissue interfaced directly with silicon — wetware compute that learns, adapts, and processes at biological efficiency.",
     points: ["Neuron-on-chip interconnects", "Adaptive in vitro learning", "Ultra-low-power inference"],

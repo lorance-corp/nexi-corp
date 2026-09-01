@@ -29,7 +29,7 @@ export function Capabilities() {
     <section id="capabilities" className="border-t border-border py-24">
       <div className="mx-auto max-w-6xl px-5">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="relative aspect-square overflow-hidden rounded-2xl border border-border ring-glow">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-border ring-glow">
             <Image
               src="/images/wireframe-brain.jpg"
               alt="A wireframe brain constructed from a network of connected nodes"
