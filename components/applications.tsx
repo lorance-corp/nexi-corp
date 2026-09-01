@@ -50,7 +50,7 @@ const applications: Application[] = [
     title: "Brain–Computer Interfacing",
     icon: Cpu,
     tagline: "The sandbox for the granular function of the human brain",
-    image: "/images/bci.png",
+    image: "/images/bci-gen.png",
     summary:
       "We create the sandbox to unveil the granular function of the human brain — the substrate that unlocks the mysteries of cognition and the complexities of personality. High-bandwidth interfaces translate neural activity into signal, and signal back into the brain.",
     points: ["High-bandwidth interfaces", "Neural decoding", "Cognition & personality"],
@@ -60,7 +60,7 @@ const applications: Application[] = [
     title: "Biocomputers",
     icon: CircuitBoard,
     tagline: "Wetware compute at biological efficiency",
-    image: "/images/hero-neuro.png",
+    image: "/images/biocomputer-gen.png",
     summary:
       "Living neural tissue interfaced directly with silicon — wetware compute that learns, adapts, and processes at biological efficiency.",
     points: ["Neuron-on-chip interconnects", "Adaptive in vitro learning", "Ultra-low-power inference"],
@@ -70,7 +70,7 @@ const applications: Application[] = [
     title: "Digital Avatars",
     icon: ScanFace,
     tagline: "Persistent digital representations of the mind",
-    image: "/images/digital-avatar.jpg",
+    image: "/images/digital-avatar-gen.png",
     summary:
       "High-fidelity neural models that capture individual cognition and behavior — persistent, interactive digital representations of the mind.",
     points: ["Cognitive twins", "Behavioral modeling", "Persistent neural state"],
@@ -80,7 +80,7 @@ const applications: Application[] = [
     title: "Defense",
     icon: ShieldCheck,
     tagline: "Neuro-inspired systems for contested environments",
-    image: "/images/defense-grid.jpg",
+    image: "/images/defense-gen.png",
     summary:
       "Resilient neuro-inspired systems for sensing, autonomy, and decision support in contested and denied environments.",
     points: ["Edge autonomy", "Signal intelligence", "Hardened neural compute"],
@@ -90,7 +90,7 @@ const applications: Application[] = [
     title: "Dual-Use",
     icon: Split,
     tagline: "One substrate, many mandates",
-    image: "/images/network-plexus.jpg",
+    image: "/images/dual-use-gen.png",
     summary:
       "Foundational platforms that serve both commercial and national-security missions — one substrate, many mandates.",
     points: ["Commercial translation", "Sovereign capability", "Controlled deployment"],
