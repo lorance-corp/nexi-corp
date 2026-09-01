@@ -60,7 +60,7 @@ export function Hero() {
           <div className="animate-rise [animation-delay:120ms]">
             <div className="relative overflow-hidden rounded-2xl border border-border ring-glow">
               <Image
-                src="/images/biocomputer.png"
+                src="/images/hero-wide-gen.png"
                 alt="A glassy human brain wired directly into a silicon processor by fine neural interconnects"
                 width={905}
                 height={961}

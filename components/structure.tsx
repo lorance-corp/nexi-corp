@@ -5,7 +5,7 @@ export function Structure() {
     <section id="structure" className="relative overflow-hidden border-t border-border py-24">
       <div aria-hidden className="absolute inset-0 opacity-20">
         <Image
-          src="/images/network-plexus.jpg"
+          src="/images/partners-gen.png"
           alt=""
           fill
           className="object-cover"

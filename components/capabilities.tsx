@@ -31,7 +31,7 @@ export function Capabilities() {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-border ring-glow">
             <Image
-              src="/images/wireframe-brain.jpg"
+              src="/images/capabilities-gen.png"
               alt="A wireframe brain constructed from a network of connected nodes"
               fill
               className="object-cover"
