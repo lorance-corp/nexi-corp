@@ -109,6 +109,9 @@ export default function NetworkPage() {
               className="group rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
             >
               <h3 className="font-display text-base font-semibold text-foreground">{e.name}</h3>
+              {"note" in e && e.note ? (
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{e.note}</p>
+              ) : null}
               <span className="mt-2 inline-block text-xs font-medium text-primary">
                 Visit
                 <span className="ml-1 inline-block transition-transform group-hover:translate-x-0.5">→</span>
