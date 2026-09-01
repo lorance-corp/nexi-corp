@@ -90,7 +90,7 @@ const applications: Application[] = [
     title: "Dual-Use",
     icon: Split,
     tagline: "One substrate, many mandates",
-    image: "/images/dual-use.png",
+    image: "/images/network-plexus.jpg",
     summary:
       "Foundational platforms that serve both commercial and national-security missions — one substrate, many mandates.",
     points: ["Commercial translation", "Sovereign capability", "Controlled deployment"],
