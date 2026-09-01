@@ -7,9 +7,10 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const nav = [
-  { label: "Applications", href: "/#applications" },
-  { label: "Structure", href: "/#structure" },
-  { label: "Partners", href: "/#partners" },
+  { label: "Applications", href: "/applications" },
+  { label: "Structure", href: "/structure" },
+  { label: "Partners", href: "/partners" },
+  { label: "Capabilities", href: "/capabilities" },
   { label: "Network", href: "/network" },
   { label: "About", href: "/about" },
 ]

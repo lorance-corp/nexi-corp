@@ -20,8 +20,11 @@ export function Structure() {
             A holding company built for the long horizon.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            NEXI Corp is the holding company and home of our service contracts. NEXI Biotech is the operating
-            company — the investable entity commercializing the platform.
+            NEXI Corp is the holding company and home of our service contracts.{" "}
+            <a href="https://www.nexibiotech.com" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary">
+              NEXI Biotech
+            </a>{" "}
+            is the operating company — the investable entity commercializing the platform.
           </p>
         </div>
 
@@ -47,7 +50,11 @@ export function Structure() {
 
           <div className="rounded-2xl border border-border bg-card/80 p-8 backdrop-blur">
             <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Operating · Investable</p>
-            <h3 className="mt-3 font-display text-2xl font-semibold text-foreground">NEXI Biotech</h3>
+            <h3 className="mt-3 font-display text-2xl font-semibold text-foreground">
+              <a href="https://www.nexibiotech.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">
+                NEXI Biotech ↗
+              </a>
+            </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               The operating company and investable entity — the nexus for integrated in vitro neurotechnology,
               productizing the platform for drug discovery and beyond.

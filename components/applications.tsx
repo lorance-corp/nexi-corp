@@ -60,7 +60,7 @@ const applications: Application[] = [
     title: "Biocomputers",
     icon: CircuitBoard,
     tagline: "Wetware compute at biological efficiency",
-    image: "/images/hero-neuro.png",
+    image: "/images/biocomputer.png",
     summary:
       "Living neural tissue interfaced directly with silicon — wetware compute that learns, adapts, and processes at biological efficiency.",
     points: ["Neuron-on-chip interconnects", "Adaptive in vitro learning", "Ultra-low-power inference"],
@@ -90,7 +90,7 @@ const applications: Application[] = [
     title: "Dual-Use",
     icon: Split,
     tagline: "One substrate, many mandates",
-    image: "/images/network-plexus.jpg",
+    image: "/images/dual-use.png",
     summary:
       "Foundational platforms that serve both commercial and national-security missions — one substrate, many mandates.",
     points: ["Commercial translation", "Sovereign capability", "Controlled deployment"],

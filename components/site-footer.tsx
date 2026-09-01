@@ -18,8 +18,11 @@ export function SiteFooter() {
         <div className="flex flex-wrap gap-10 text-sm">
           <nav className="flex flex-col gap-3" aria-label="Footer">
             <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Explore</span>
-            <Link href="/portfolio" className="text-muted-foreground transition-colors hover:text-foreground">
-              Portfolio
+            <Link href="/applications" className="text-muted-foreground transition-colors hover:text-foreground">
+              Applications
+            </Link>
+            <Link href="/partners" className="text-muted-foreground transition-colors hover:text-foreground">
+              Partners
             </Link>
             <Link href="/network" className="text-muted-foreground transition-colors hover:text-foreground">
               Network

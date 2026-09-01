@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -37,7 +38,7 @@ export function Hero() {
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Button
-                render={<a href="#applications" />}
+                render={<Link href="/applications" />}
                 nativeButton={false}
                 size="lg"
                 className="rounded-full"
@@ -45,7 +46,7 @@ export function Hero() {
                 Explore applications
               </Button>
               <Button
-                render={<a href="#structure" />}
+                render={<Link href="/structure" />}
                 nativeButton={false}
                 size="lg"
                 variant="outline"
@@ -83,10 +84,18 @@ export function Hero() {
             { k: "In vitro", v: "Neural substrates" },
             { k: "8 domains", v: "Bio · Neuro · Medicine · Defense" },
             { k: "Holding", v: "Service contracts" },
-            { k: "NEXI Biotech", v: "Operating entity" },
+            { k: "NEXI Biotech", v: "Operating entity", href: "https://www.nexibiotech.com" },
           ].map((s) => (
             <div key={s.k} className="bg-card px-5 py-5">
-              <dt className="font-display text-xl font-semibold text-foreground">{s.k}</dt>
+              <dt className="font-display text-xl font-semibold text-foreground">
+                {s.href ? (
+                  <a href={s.href} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">
+                    {s.k}
+                  </a>
+                ) : (
+                  s.k
+                )}
+              </dt>
               <dd className="mt-1 text-sm text-muted-foreground">{s.v}</dd>
             </div>
           ))}
