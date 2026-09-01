@@ -70,7 +70,7 @@ export default function Page() {
           </div>
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-border md:order-first">
             <Image
-              src="/images/bci.png"
+              src="/images/bci-gen.png"
               alt="Brain-computer interface visualization"
               fill
               className="object-cover"
@@ -139,7 +139,7 @@ export default function Page() {
           </div>
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-border">
             <Image
-              src="/images/network-plexus.jpg"
+              src="/images/partners-gen.png"
               alt="Connected network visualization"
               fill
               className="object-cover"
@@ -154,8 +154,8 @@ export default function Page() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-border">
             <Image
-              src="/images/wireframe-brain.jpg"
-              alt="Wireframe brain model"
+              src="/images/capabilities-gen.png"
+              alt="Layered capability stack visualization"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 50vw, 100vw"
