@@ -77,8 +77,16 @@ export const portfolio: PortfolioEntry[] = [
 ]
 
 export const ecosystem = [
-  { name: "Florida BioXchange", href: "https://www.flbioxchange.com" },
-  { name: "BIO on the Bay", href: "https://www.bioonthebay.com" },
-  { name: "Florida Life Science Collective", href: "https://www.flbiotech.org" },
-  { name: "VC Village · Tampa Bay Chapter", href: "https://vcvillage.co" },
+  {
+    name: "Florida Biotech Exchange",
+    href: "https://www.flbiotech.org",
+    note: "The statewide life science council",
+  },
+  {
+    name: "Florida BioXchange",
+    href: "https://www.flbioxchange.com",
+    note: "The Exchange's lead virtual event series",
+  },
+  { name: "BIO on the Bay", href: "https://www.bioonthebay.com", note: "St. Petersburg's annual summit" },
+  { name: "VC Village · Tampa Bay Chapter", href: "https://vcvillage.co", note: "Investor community" },
 ]
