@@ -17,9 +17,36 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'NEXI Corp — Deep Neuro TechBio',
+  metadataBase: new URL('https://www.nexi-corp.com'),
+  title: {
+    default: 'NEXI Corp — Deep Neuro TechBio',
+    template: '%s',
+  },
   description:
     'NEXI Corp is the holding company behind NEXI Biotech and the partner network translating living neural systems into deep neuro techbio — spanning longevity, personalized medicine, precision neurology, and brain–computer interfacing.',
+  openGraph: {
+    type: 'website',
+    url: 'https://www.nexi-corp.com',
+    siteName: 'NEXI Corp',
+    title: 'NEXI Corp — Deep Neuro TechBio',
+    description:
+      'The nexus of mind and machine: IP holding company for NEXI Biotech and the partner marketplace for CNS translation across eight deeptech domains.',
+    images: [
+      {
+        url: '/images/hero-wide-gen.png',
+        width: 1024,
+        height: 1024,
+        alt: 'NEXI Corp — a translucent brain fused to a circuit substrate',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NEXI Corp — Deep Neuro TechBio',
+    description:
+      'The nexus of mind and machine: the holding company and partner marketplace for deep neuro techbio.',
+    images: ['/images/hero-wide-gen.png'],
+  },
   icons: {
     icon: [
       { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
