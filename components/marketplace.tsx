@@ -8,7 +8,7 @@ export function Marketplace() {
       <div
         aria-hidden
         className="absolute left-1/2 top-0 h-[420px] w-[780px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(closest-side, oklch(0.5 0.14 200 / 50%), transparent)" }}
+        style={{ background: "radial-gradient(closest-side, oklch(0.42 0.1 252 / 38%), transparent)" }}
       />
       <div className="relative mx-auto max-w-6xl px-5">
         <div className="max-w-2xl">
@@ -17,9 +17,9 @@ export function Marketplace() {
             The marketplace is opening.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            NEXI Corp is the marketplace for comprehensive services across these domains — one engagement, every
+            NEXI Corp is the marketplace for comprehensive services across these domains - one engagement, every
             capability in the network. Our storefronts on scientist.com and scienceexchange.com are coming online;
-            ask us about them. For the best savings, engage us directly — direct work skips platform fees and routes
+            ask us about them. For the best savings, engage us directly - direct work skips platform fees and routes
             straight to the right team.
           </p>
         </div>
@@ -37,7 +37,7 @@ export function Marketplace() {
             <BadgeCheck className="h-6 w-6 text-primary" strokeWidth={1.5} aria-hidden />
             <h3 className="mt-4 font-display text-lg font-semibold text-foreground">Direct = best savings</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-              Reaching out directly always gets the best pricing — no platform overhead, scoped by the people who
+              Reaching out directly always gets the best pricing - no platform overhead, scoped by the people who
               will actually run the work.
             </p>
           </div>

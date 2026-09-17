@@ -33,9 +33,9 @@ export const metadata: Metadata = {
       'The nexus of mind and machine: IP holding company for NEXI Biotech and the partner marketplace for CNS translation across eight deeptech domains.',
     images: [
       {
-        url: '/images/hero-wide-gen.png',
-        width: 1024,
-        height: 1024,
+        url: '/images/hero-nexus-gen.png',
+        width: 1536,
+        height: 864,
         alt: 'NEXI Corp — a translucent brain fused to a circuit substrate',
       },
     ],
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: 'NEXI Corp — Deep Neuro TechBio',
     description:
       'The nexus of mind and machine: the holding company and partner marketplace for deep neuro techbio.',
-    images: ['/images/hero-wide-gen.png'],
+    images: ['/images/hero-nexus-gen.png'],
   },
   icons: {
     icon: [

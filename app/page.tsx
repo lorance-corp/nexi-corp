@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Hero } from "@/components/hero"
-import { Marketplace } from "@/components/marketplace"
 
 const applicationChips = [
   "Longevity",
@@ -42,7 +41,16 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Marketplace />
+
+      <section className="border-t border-border py-20">
+        <div className="mx-auto max-w-6xl px-5">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">Marketplace</p>
+          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-balance md:text-4xl">The marketplace is opening.</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground text-pretty">Comprehensive services across the network, through a single engagement.</p>
+          <TeaseLink href="/marketplace" label="See how to get access" />
+          <p className="mt-6 text-sm text-muted-foreground">Registered on SAM.gov. <Link href="/contact" className="text-primary transition-colors hover:text-foreground">Request our capability statement.</Link></p>
+        </div>
+      </section>
 
       {/* Applications tease */}
       <section className="border-t border-border py-20">

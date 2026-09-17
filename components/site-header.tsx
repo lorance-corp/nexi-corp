@@ -11,6 +11,7 @@ const nav = [
   { label: "Applications", href: "/applications" },
   { label: "Structure", href: "/structure" },
   { label: "Partners", href: "/partners" },
+  { label: "Marketplace", href: "/marketplace" },
   { label: "Capabilities", href: "/capabilities" },
   { label: "Network", href: "/network" },
   { label: "About", href: "/about" },

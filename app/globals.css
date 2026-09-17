@@ -58,7 +58,7 @@
   --card-foreground: oklch(0.95 0.01 220);
   --popover: oklch(0.19 0.025 248);
   --popover-foreground: oklch(0.95 0.01 220);
-  --primary: oklch(0.82 0.14 197);
+  --primary: oklch(0.58 0.09 252);
   --primary-foreground: oklch(0.16 0.03 250);
   --secondary: oklch(0.26 0.025 248);
   --secondary-foreground: oklch(0.95 0.01 220);
@@ -69,8 +69,8 @@
   --destructive: oklch(0.62 0.2 25);
   --border: oklch(0.72 0.1 200 / 18%);
   --input: oklch(0.72 0.1 200 / 22%);
-  --ring: oklch(0.82 0.14 197);
-  --glow: oklch(0.86 0.15 197);
+  --ring: oklch(0.58 0.09 252);
+  --glow: oklch(0.62 0.1 252);
   --signal: oklch(0.8 0.11 45);
   --chart-1: oklch(0.82 0.14 197);
   --chart-2: oklch(0.7 0.12 220);
@@ -80,12 +80,12 @@
   --radius: 0.5rem;
   --sidebar: oklch(0.19 0.025 248);
   --sidebar-foreground: oklch(0.95 0.01 220);
-  --sidebar-primary: oklch(0.82 0.14 197);
+  --sidebar-primary: oklch(0.58 0.09 252);
   --sidebar-primary-foreground: oklch(0.16 0.03 250);
   --sidebar-accent: oklch(0.3 0.04 210);
   --sidebar-accent-foreground: oklch(0.95 0.01 220);
   --sidebar-border: oklch(0.72 0.1 200 / 18%);
-  --sidebar-ring: oklch(0.82 0.14 197);
+  --sidebar-ring: oklch(0.58 0.09 252);
 }
 
 .dark {
@@ -172,17 +172,17 @@
 @layer utilities {
   .bg-grid {
     background-image:
-      linear-gradient(to right, oklch(0.72 0.1 200 / 6%) 1px, transparent 1px),
-      linear-gradient(to bottom, oklch(0.72 0.1 200 / 6%) 1px, transparent 1px);
+      linear-gradient(to right, oklch(0.58 0.09 252 / 6%) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(0.58 0.09 252 / 6%) 1px, transparent 1px);
     background-size: 56px 56px;
   }
   .text-glow {
-    text-shadow: 0 0 24px oklch(0.86 0.15 197 / 45%);
+    text-shadow: 0 0 24px oklch(0.62 0.1 252 / 35%);
   }
   .ring-glow {
     box-shadow:
-      0 0 0 1px oklch(0.82 0.14 197 / 25%),
-      0 0 40px -8px oklch(0.86 0.15 197 / 35%);
+      0 0 0 1px oklch(0.58 0.09 252 / 25%),
+      0 0 40px -8px oklch(0.62 0.1 252 / 35%);
   }
 }
 
