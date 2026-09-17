@@ -15,7 +15,7 @@ export function PageHero({
       <div
         aria-hidden
         className="absolute left-1/2 top-0 h-[420px] w-[780px] -translate-x-1/2 rounded-full opacity-35 blur-3xl"
-        style={{ background: "radial-gradient(closest-side, oklch(0.5 0.14 200 / 50%), transparent)" }}
+        style={{ background: "radial-gradient(closest-side, oklch(0.42 0.1 252 / 38%), transparent)" }}
       />
       <div className="relative mx-auto max-w-6xl px-5 pb-14 pt-32 md:pt-40">
         <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">{eyebrow}</p>
