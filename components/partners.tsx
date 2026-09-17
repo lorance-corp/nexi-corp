@@ -116,7 +116,20 @@ export function Partners() {
                   aria-hidden
                 />
               </div>
-              <h3 className="mt-4 font-display text-lg font-semibold text-foreground text-balance">{p.title}</h3>
+              <h3 className="mt-4 font-display text-lg font-semibold text-foreground text-balance">
+                {p.flagship ? (
+                  <a
+                    href="https://www.nexibiotech.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-primary"
+                  >
+                    {p.title} ↗
+                  </a>
+                ) : (
+                  p.title
+                )}
+              </h3>
               <p className="mt-1 text-xs uppercase tracking-wide text-primary/80">{p.capability}</p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground text-pretty">{p.blurb}</p>
             </div>
