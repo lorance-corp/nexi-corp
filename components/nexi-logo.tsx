@@ -9,6 +9,7 @@ export function NexiLogo({ className }: { className?: string }) {
       width={2813}
       height={905}
       priority
+      sizes="220px"
       className={cn("h-7 w-auto", className)}
     />
   )

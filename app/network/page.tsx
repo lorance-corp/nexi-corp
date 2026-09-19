@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Network · NEXI Corp",
   description:
     "The NEXI partner network: one front door for CNS programs, qualified deal flow for providers and consultants.",
+  alternates: { canonical: '/network' }
 }
 
 const forSponsors = [
@@ -115,7 +116,7 @@ export default function NetworkPage() {
               ) : null}
               <span className="mt-2 inline-block text-xs font-medium text-primary">
                 Visit
-                <span className="ml-1 inline-block transition-transform group-hover:translate-x-0.5">→</span>
+                <ArrowRight className="ml-1 inline h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden />
               </span>
             </a>
           ))}

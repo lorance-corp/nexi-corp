@@ -6,6 +6,7 @@ import { site } from "@/lib/site"
 export const metadata: Metadata = {
   title: "Contact · NEXI Corp",
   description: "Engage NEXI Corp: sponsors, providers, consultants, and investors all start here.",
+  alternates: { canonical: '/contact' }
 }
 
 export default function ContactPage() {

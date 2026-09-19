@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Structure · NEXI Corp",
   description:
     "NEXI Corp holds the intellectual property and the service contracts; NEXI Biotech is the operating, investable entity commercializing the platform.",
+  alternates: { canonical: '/structure' }
 }
 
 export default function StructurePage() {

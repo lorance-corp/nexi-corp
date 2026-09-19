@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "About · NEXI Corp",
   description:
     "NEXI Corp, a DBA of Lorance Enterprise Corp, holds the intellectual property behind NEXI Biotech and coordinates the NEXI partner network.",
+  alternates: { canonical: '/about' }
 }
 
 export default function AboutPage() {
@@ -54,6 +55,7 @@ export default function AboutPage() {
               alt="Case Lorance, Founder & CEO of NEXI Corp"
               width={496}
               height={503}
+              sizes="(min-width: 768px) 280px, 100vw"
               className="h-auto w-full object-cover"
             />
           </div>

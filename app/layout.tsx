@@ -19,6 +19,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.nexi-corp.com'),
+  alternates: { canonical: '/' },
   title: {
     default: 'NEXI Corp · Deep Neuro TechBio',
     template: '%s',

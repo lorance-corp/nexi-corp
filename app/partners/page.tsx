@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Partners · NEXI Corp",
   description:
     "The NEXI partner network: our flagship NEXI Biotech plus vetted capabilities across study execution, histology, tissue pathology, quantum discovery, and AI discovery, with identities disclosed on engagement.",
+  alternates: { canonical: '/partners' }
 }
 
 export default function PartnersPage() {

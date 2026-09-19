@@ -1,4 +1,4 @@
-import { FlaskConical, Microscope, Stethoscope, Atom, Sparkles, Network } from "lucide-react"
+import { FlaskConical, Microscope, Stethoscope, Atom, Sparkles, Network, ArrowUpRight } from "lucide-react"
 
 type Partner = {
   tier: string
@@ -112,7 +112,8 @@ export function Partners() {
                     rel="noopener noreferrer"
                     className="transition-colors hover:text-primary"
                   >
-                    {p.title} ↗
+                    {p.title}
+                    <ArrowUpRight className="ml-1 inline h-4 w-4" aria-hidden />
                   </a>
                 ) : (
                   p.title

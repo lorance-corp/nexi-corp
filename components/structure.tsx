@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { ArrowUpRight } from "lucide-react"
 
 export function Structure() {
   return (
@@ -38,7 +39,8 @@ export function Structure() {
             <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Operating · Investable</p>
             <h3 className="mt-3 font-display text-2xl font-semibold text-foreground">
               <a href="https://www.nexibiotech.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-primary">
-                NEXI Biotech ↗
+                NEXI Biotech
+                <ArrowUpRight className="ml-1 inline h-5 w-5" aria-hidden />
               </a>
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">

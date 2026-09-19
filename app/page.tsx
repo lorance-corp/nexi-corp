@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Hero } from "@/components/hero"
 import { FullBleed } from "@/components/full-bleed"
 import { capabilities } from "@/lib/capabilities"
@@ -168,7 +168,8 @@ export default function Page() {
               >
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Flagship</p>
                 <h3 className="mt-2 font-display text-lg font-semibold text-foreground">
-                  NEXI Biotech <span className="text-primary">↗</span>
+                  NEXI Biotech
+                  <ArrowUpRight className="ml-1 inline h-4 w-4 text-primary" aria-hidden />
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                   The operating company, carrying human neural circuits into preclinical evidence.
