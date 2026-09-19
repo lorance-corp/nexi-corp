@@ -35,10 +35,10 @@ export const metadata: Metadata = {
       'The nexus of mind and machine: a measured model of how the brain computes, across eight deeptech domains.',
     images: [
       {
-        url: '/images/og-nexi-corp.png',
-        width: 1200,
-        height: 630,
-        alt: 'NEXI Corp: a directed three-compartment neural circuit on a microelectrode array, with a single-unit trace',
+        url: '/images/hero-wide-gen.png',
+        width: 1024,
+        height: 1024,
+        alt: 'NEXI Corp',
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: 'NEXI Corp · Deep Neuro TechBio',
     description:
       'The nexus of mind and machine: a measured model of how the brain computes.',
-    images: ['/images/og-nexi-corp.png'],
+    images: ['/images/hero-wide-gen.png'],
   },
   icons: {
     icon: [

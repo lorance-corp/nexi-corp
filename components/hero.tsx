@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { CircuitArray } from "@/components/circuit-array"
+import Image from "next/image"
 
 const facts = [
   { k: "8 domains", v: "One living substrate" },
@@ -57,12 +57,24 @@ export function Hero() {
           </div>
 
           <div className="animate-rise [animation-delay:120ms]">
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card/40 ring-glow">
-              <CircuitArray className="h-auto w-full" />
+            <div className="relative overflow-hidden rounded-2xl border border-border ring-glow">
+              <Image
+                src="/images/hero-wide-gen.png"
+                alt="A glassy human brain wired into a silicon processor by fine neural interconnects"
+                width={1024}
+                height={1024}
+                priority
+                sizes="(min-width: 1024px) 46vw, 100vw"
+                className="h-full w-full object-cover"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-0"
+                style={{
+                  background: "linear-gradient(to top, oklch(0.16 0.02 250 / 65%), transparent 55%)",
+                }}
+              />
             </div>
-            <p className="mt-3 text-center font-mono text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground">
-              A directed loop, read out one electrode at a time
-            </p>
           </div>
         </div>
 

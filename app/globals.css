@@ -134,32 +134,7 @@
   animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* The signal travelling along a microchannel in the hero circuit: a short dash
-   chasing the length of the path. Normalised with pathLength="100" on the path
-   so the dash reads the same whatever the channel's real arc length. */
-.nexi-pulse {
-  stroke-dasharray: 7 93;
-  stroke-dashoffset: 100;
-  animation-name: nexi-run;
-  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
-  animation-iteration-count: infinite;
-}
-
-@keyframes nexi-run {
-  from {
-    stroke-dashoffset: 100;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .nexi-pulse {
-    animation: none;
-    stroke-dasharray: 7 93;
-    stroke-dashoffset: 46;
-  }
   .animate-rise {
     animation: none;
   }
