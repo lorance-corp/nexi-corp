@@ -16,12 +16,12 @@ const forSponsors = [
   {
     icon: Compass,
     title: "One front door",
-    body: "Bring the translational question, not a vendor list. We scope what the program actually needs.",
+    body: "Bring the translational question and we scope what the program actually needs, without your having to name a vendor first.",
   },
   {
     icon: Route,
-    title: "Routed, not referred",
-    body: "Work is placed across portfolio companies, study partners, and consultants, matched to the question rather than to whoever happened to answer the phone.",
+    title: "Matched to the question",
+    body: "Work is placed across portfolio companies, study partners, and consultants, and every placement is matched to the question the program is actually asking.",
   },
   {
     icon: ShieldCheck,
@@ -65,10 +65,10 @@ export default function NetworkPage() {
               Source deal flow through NEXI.
             </h2>
             <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground text-pretty">
-              CROs, platform companies, and independent consultants join the network to receive qualified and
-              scoped work instead of cold leads, and because we are already connected across CNS translation, the
-              network gives that web of relationships a focal point so the right expertise lands on the right
-              program at the right time.
+              CROs, platform companies, and independent consultants join the network to receive work that arrives
+              already qualified and scoped, and because we are connected across CNS translation the network gives
+              that web of relationships a focal point, so the right expertise lands on the right program at the
+              right time.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               <Handshake className="mr-2 inline h-4 w-4 text-primary" aria-hidden />
@@ -123,15 +123,6 @@ export default function NetworkPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 pb-24 text-center">
-        <h2 className="mx-auto max-w-2xl font-display text-3xl font-bold tracking-tight text-balance md:text-4xl">
-          Either way, it starts with a conversation.
-        </h2>
-        <Link href="/contact" className="group mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary">
-          Contact NEXI Corp
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </Link>
-      </section>
     </>
   )
 }

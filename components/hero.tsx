@@ -5,7 +5,7 @@ import { CircuitArray } from "@/components/circuit-array"
 const facts = [
   { k: "8 domains", v: "One living substrate" },
   { k: "Single-unit", v: "Functional resolution" },
-  { k: "Human iPSC", v: "Not an animal proxy" },
+  { k: "Human iPSC", v: "Patient-derived lines" },
   { k: "NEXI Biotech", v: "The flagship platform company", href: "https://www.nexibiotech.com" },
 ]
 
@@ -37,7 +37,7 @@ export function Hero() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
               NEXI builds living human neural circuits that can be perturbed and read out at the resolution of
               single units, so that the questions deciding whether a program moves forward are answered on human
-              biology rather than on a proxy for it.
+              biology itself.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -61,7 +61,7 @@ export function Hero() {
               <CircuitArray className="h-auto w-full" />
             </div>
             <p className="mt-3 text-center font-mono text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground">
-              A directed loop, read out electrode by electrode
+              A directed loop, read out one electrode at a time
             </p>
           </div>
         </div>

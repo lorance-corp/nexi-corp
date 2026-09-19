@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s',
   },
   description:
-    'NEXI Corp turns the function of human brain circuits into a measured model, the foundation of a new category of neurotechnology spanning longevity, personalized medicine, precision neurology, brain-computer interfacing, biocomputing, digital avatars, defense, and dual-use programs.',
+    'NEXI Corp turns the function of human brain circuits into a measured model, the foundation of a new category of neurotechnology across eight deeptech domains.',
   openGraph: {
     type: 'website',
     url: 'https://www.nexi-corp.com',

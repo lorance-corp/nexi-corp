@@ -16,6 +16,12 @@ export function EngageCta() {
   const pathname = usePathname()
   if (pathname === "/contact") return null
 
+  // Never offer a second button that points at the page the visitor is on.
+  const secondary =
+    pathname === "/capabilities"
+      ? { href: "/applications", label: "Explore the applications" }
+      : { href: "/capabilities", label: "Explore the capabilities" }
+
   return (
     <section className="relative overflow-hidden border-t border-border">
       <div
@@ -32,18 +38,20 @@ export function EngageCta() {
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <Button render={<Link href="/contact" />} nativeButton={false} size="lg" className="rounded-full">
-            Engage NEXI
+            Start the conversation
             <ArrowRight className="ml-1.5 h-4 w-4" aria-hidden />
           </Button>
-          <Button
-            render={<Link href="/capabilities" />}
-            nativeButton={false}
-            size="lg"
-            variant="outline"
-            className="rounded-full border-border bg-transparent"
-          >
-            Explore the capabilities
-          </Button>
+          {pathname !== secondary.href ? (
+            <Button
+              render={<Link href={secondary.href} />}
+              nativeButton={false}
+              size="lg"
+              variant="outline"
+              className="rounded-full border-border bg-transparent"
+            >
+              {secondary.label}
+            </Button>
+          ) : null}
         </div>
       </div>
     </section>

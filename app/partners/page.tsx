@@ -16,9 +16,9 @@ export default function PartnersPage() {
       <PageHero eyebrow="The ecosystem · Agency model" title="One network. Every layer of translation.">
         <p>
           NEXI Corp connects CNS programs with vetted partners across modeling, studies, histology, and discovery,
-          along with the consultants who tie the pieces together. Partner companies are listed here by capability
-          rather than by name, and identities are shared once you engage, because relationships in this network are
-          earned rather than scraped.
+          along with the consultants who tie the pieces together. Partner companies are listed here by
+          capability, and identities are shared once you engage, because the relationships behind this network were
+          earned over years of working alongside the people in it.
         </p>
       </PageHero>
       <Partners />

@@ -46,7 +46,7 @@ export function FullBleed({
             legible over the artwork. */}
         <div
           className="absolute inset-0 md:hidden"
-          style={{ background: "oklch(0.16 0.02 250 / 88%)" }}
+          style={{ background: "oklch(0.16 0.02 250 / 80%)" }}
         />
         <div
           className="absolute inset-0 hidden md:block"

@@ -15,9 +15,9 @@
 type Compartment = { id: string; cx: number; cy: number; w: number; h: number }
 
 const COMPARTMENTS: Compartment[] = [
-  { id: "a", cx: 178, cy: 158, w: 236, h: 158 },
-  { id: "b", cx: 716, cy: 176, w: 236, h: 158 },
-  { id: "c", cx: 460, cy: 420, w: 236, h: 158 },
+  { id: "a", cx: 196, cy: 168, w: 264, h: 168 },
+  { id: "b", cx: 700, cy: 182, w: 264, h: 168 },
+  { id: "c", cx: 452, cy: 424, w: 264, h: 168 },
 ]
 
 /**
@@ -25,37 +25,72 @@ const COMPARTMENTS: Compartment[] = [
  * arrowhead lands in open substrate and stays legible.
  */
 const CHANNELS = [
-  { id: "ab", d: "M 300 150 C 400 108, 500 108, 586 150", dur: "3.2s", delay: "0s" },
-  { id: "bc", d: "M 726 258 C 712 344, 654 394, 586 410", dur: "3.6s", delay: "1.1s" },
-  { id: "ca", d: "M 344 398 C 254 364, 196 300, 180 242", dur: "3.4s", delay: "2.2s" },
+  { id: "ab", d: "M 334 152 C 430 110, 510 110, 558 150", dur: "3.2s", delay: "0s" },
+  { id: "bc", d: "M 716 272 C 706 350, 652 392, 596 408", dur: "3.6s", delay: "1.1s" },
+  { id: "ca", d: "M 322 400 C 248 368, 204 312, 194 260", dur: "3.4s", delay: "2.2s" },
 ]
 
-/** Cell bodies with a few processes, scattered deterministically inside a well. */
+/**
+ * One second of extracellular record from a single unit: a small positive
+ * shoulder, a fast negative deflection, then a slower positive repolarisation
+ * back to baseline, at the irregular intervals a real unit fires at.
+ */
+const SPIKE_TRAIN = (() => {
+  const x0 = 48
+  const x1 = 272
+  const base = 534
+  const isi = [34, 21, 45, 29, 18, 38]
+  let x = x0 + 12
+  let d = `M ${x0} ${base}`
+  for (const gap of isi) {
+    x += gap
+    if (x > x1 - 14) break
+    d +=
+      ` L ${x - 4} ${base}` +
+      ` L ${x - 2} ${base - 4}` +
+      ` L ${x + 1} ${base + 22}` +
+      ` L ${x + 4} ${base - 13}` +
+      ` L ${x + 9} ${base - 3}` +
+      ` L ${x + 13} ${base}`
+  }
+  return d + ` L ${x1} ${base}`
+})()
+
+/**
+ * Cell bodies with a few processes each, scattered deterministically inside a
+ * well. The processes curve and vary in number and length so a soma reads as a
+ * cell rather than as an asterisk.
+ */
 function Neurons({ cx, cy, w, h, seed }: Compartment & { seed: number }) {
   let s = seed
   const rand = () => ((s = (s * 1103515245 + 12345) % 2147483648) / 2147483648)
-  const pts = Array.from({ length: 11 }, () => ({
-    x: cx - w / 2 + 24 + rand() * (w - 48),
-    y: cy - h / 2 + 22 + rand() * (h - 44),
-    r: 3.2 + rand() * 2.4,
+  const pts = Array.from({ length: 10 }, () => ({
+    x: cx - w / 2 + 26 + rand() * (w - 52),
+    y: cy - h / 2 + 24 + rand() * (h - 48),
+    r: 3 + rand() * 2.4,
     a: rand() * Math.PI * 2,
+    n: 2 + Math.floor(rand() * 3),
+    bend: 0.4 + rand() * 0.9,
   }))
   return (
     <g>
       {pts.map((p, i) => (
         <g key={i}>
-          {[0, 2.1, 4.2].map((turn, k) => {
-            const ang = p.a + turn
-            const len = 17 + ((i * 7 + k * 11) % 13)
+          {Array.from({ length: p.n }, (_, k) => {
+            const ang = p.a + (k * 2 * Math.PI) / p.n + (k % 2 ? 0.35 : -0.25)
+            const len = 14 + ((i * 13 + k * 19) % 22)
+            const ex = p.x + Math.cos(ang) * len
+            const ey = p.y + Math.sin(ang) * len
+            // Control point pushed off the chord so the process arcs.
+            const mx = p.x + Math.cos(ang) * len * 0.55 - Math.sin(ang) * len * 0.3 * p.bend
+            const my = p.y + Math.sin(ang) * len * 0.55 + Math.cos(ang) * len * 0.3 * p.bend
             return (
-              <line
+              <path
                 key={k}
-                x1={p.x}
-                y1={p.y}
-                x2={p.x + Math.cos(ang) * len}
-                y2={p.y + Math.sin(ang) * len}
+                d={`M ${p.x.toFixed(1)} ${p.y.toFixed(1)} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`}
+                fill="none"
                 stroke="oklch(0.82 0.14 197)"
-                strokeOpacity="0.38"
+                strokeOpacity="0.36"
                 strokeWidth="1"
                 strokeLinecap="round"
               />
@@ -96,8 +131,8 @@ export function CircuitArray({ className }: { className?: string }) {
           <stop offset="100%" stopColor="oklch(0.2 0.03 240)" stopOpacity="0.2" />
         </linearGradient>
         <radialGradient id="nexi-vignette" cx="50%" cy="50%" r="72%">
-          <stop offset="55%" stopColor="oklch(0.16 0.02 250)" stopOpacity="0" />
-          <stop offset="100%" stopColor="oklch(0.16 0.02 250)" stopOpacity="0.85" />
+          <stop offset="62%" stopColor="oklch(0.16 0.02 250)" stopOpacity="0" />
+          <stop offset="100%" stopColor="oklch(0.16 0.02 250)" stopOpacity="0.55" />
         </radialGradient>
         <filter id="nexi-glow" x="-120%" y="-120%" width="340%" height="340%">
           <feGaussianBlur stdDeviation="3.5" result="b" />
@@ -111,11 +146,11 @@ export function CircuitArray({ className }: { className?: string }) {
           viewBox="0 0 12 12"
           refX="9"
           refY="6"
-          markerWidth="7"
-          markerHeight="7"
+          markerWidth="11"
+          markerHeight="11"
           orient="auto-start-reverse"
         >
-          <path d="M 1 1.5 L 10.5 6 L 1 10.5 Z" fill="oklch(0.88 0.14 197)" fillOpacity="0.9" />
+          <path d="M 1 1 L 11 6 L 1 11 Z" fill="oklch(0.9 0.14 197)" fillOpacity="0.95" />
         </marker>
       </defs>
 
@@ -195,14 +230,14 @@ export function CircuitArray({ className }: { className?: string }) {
 
       {/* Leader line from one recording site down to the trace panel */}
       <path
-        d="M 366 470 L 286 508"
+        d="M 352 478 L 288 506"
         stroke="oklch(0.82 0.14 197)"
         strokeOpacity="0.45"
         strokeWidth="1"
         strokeDasharray="3 4"
         fill="none"
       />
-      <circle cx="366" cy="470" r="3.6" fill="oklch(0.92 0.15 197)" filter="url(#nexi-glow)" />
+      <circle cx="352" cy="478" r="3.6" fill="oklch(0.92 0.15 197)" filter="url(#nexi-glow)" />
 
       {/* Single-unit trace */}
       <g>
@@ -218,7 +253,7 @@ export function CircuitArray({ className }: { className?: string }) {
           strokeOpacity="0.35"
         />
         <path
-          d="M 48 534 L 80 534 L 84 518 L 88 552 L 92 527 L 96 534 L 138 534 L 142 516 L 146 555 L 150 525 L 154 534 L 206 534 L 210 519 L 214 551 L 218 526 L 222 534 L 272 534"
+          d={SPIKE_TRAIN}
           fill="none"
           stroke="oklch(0.88 0.14 197)"
           strokeOpacity="0.9"

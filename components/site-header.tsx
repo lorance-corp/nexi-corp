@@ -48,7 +48,7 @@ export function SiteHeader() {
           </Link>
           {/* Sits beside the wordmark so it is noticed without being read as
               part of the sentence that follows it. */}
-          <span className="hidden font-mono text-[0.7rem] text-muted-foreground lg:inline">/neks-eye/</span>
+          <span className="hidden font-mono text-xs text-primary/80 sm:inline">/neks-eye/</span>
         </div>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {nav.map((item) => (

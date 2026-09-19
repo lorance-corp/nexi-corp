@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Hero } from "@/components/hero"
 import { FullBleed } from "@/components/full-bleed"
 import { capabilities } from "@/lib/capabilities"
+import { ecosystem } from "@/lib/portfolio"
 
 const applicationChips = [
   "Longevity",
@@ -16,13 +17,6 @@ const applicationChips = [
   "Dual-Use",
 ]
 
-
-const ecosystemNames = [
-  { name: "Florida Biotech Exchange", href: "https://www.flbiotech.org" },
-  { name: "Florida BioXchange", href: "https://www.flbioxchange.com" },
-  { name: "BIO on the Bay", href: "https://www.bioonthebay.com" },
-  { name: "VC Village · Tampa Bay", href: "https://vcvillage.co" },
-]
 
 function TeaseLink({ href, label }: { href: string; label: string }) {
   return (
@@ -43,12 +37,12 @@ export default function Page() {
         alt="A dense lattice of engineered neural connections lit across a silicon die"
         align="left"
         eyebrow="Applications"
-        title="One living substrate, eight frontier domains."
+        title="The same circuit answers eight different questions."
       >
         <p>
-          A human neural circuit that can be built to specification and measured under load behaves as a platform
-          rather than a product, which is why the same substrate that de-risks a CNS therapeutic also underwrites
-          biocomputing, interfacing, digital avatars, and national-security research.
+          A human neural circuit that can be built to specification and measured under load behaves as a
+          platform, which is why the same substrate that de-risks a CNS therapeutic also underwrites biocomputing,
+          interfacing, digital avatars, and national-security research.
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {applicationChips.map((c) => (
@@ -98,8 +92,8 @@ export default function Page() {
         <p>
           The flagship in vitro platform sits alongside vetted partners across translational study execution,
           histology and sub-cellular quantification, tissue pathology, and quantum and AI discovery, each disclosed
-          once an engagement is underway and coordinated so that results from different teams arrive as one answer
-          rather than as four reports you have to reconcile.
+          once an engagement is underway and coordinated so that results from several teams arrive as one answer
+          you can act on.
         </p>
         <TeaseLink href="/partners" label="Browse the capabilities" />
       </FullBleed>
@@ -114,14 +108,14 @@ export default function Page() {
                 One front door for deal flow.
               </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground text-pretty">
-                Sponsors bring the translational question rather than a vendor list, providers and consultants
-                receive qualified and scoped work instead of cold leads, and the whole arrangement stays rooted in
-                the Florida ecosystem we are helping to build.
+                Sponsors bring the translational question and we scope what it actually needs, providers and
+                consultants receive work that is already qualified and scoped, and the whole arrangement stays
+                rooted in the Florida ecosystem we are helping to build.
               </p>
               <TeaseLink href="/network" label="How the network works" />
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {ecosystemNames.map((e) => (
+              {ecosystem.map((e) => (
                 <a
                   key={e.href}
                   href={e.href}
@@ -172,7 +166,7 @@ export default function Page() {
                   <ArrowUpRight className="ml-1 inline h-4 w-4 text-primary" aria-hidden />
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                  The operating company, carrying human neural circuits into preclinical evidence.
+                  The operating company carries human neural circuits into preclinical evidence.
                 </p>
               </a>
             </div>

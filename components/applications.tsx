@@ -22,7 +22,7 @@ const applications: Application[] = [
     tagline: "Extending the healthy lifespan of the brain",
     image: "/images/longevity.png",
     summary:
-      "We treat cognitive aging as an engineering problem, mapping how neural tissue degrades and intervening to preserve function, so that a candidate is tested on human-relevant substrates rather than on a proxy for them.",
+      "We treat cognitive aging as an engineering problem, mapping how neural tissue degrades and intervening to preserve function, so that a candidate is tested on human-relevant substrates from the very first experiment.",
     points: ["Neural aging models", "Cellular renewal assays", "Cognitive resilience"],
   },
   {

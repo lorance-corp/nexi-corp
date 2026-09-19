@@ -50,10 +50,7 @@ export function Marketplace() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center gap-3">
-          <Button render={<Link href="/contact" />} nativeButton={false} size="lg" className="rounded-full">
-            Engage directly
-          </Button>
+        <div className="mt-10">
           <Button
             render={<Link href="/contact" />}
             nativeButton={false}
