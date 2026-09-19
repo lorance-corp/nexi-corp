@@ -87,6 +87,6 @@ export async function sendContact(_prev: ContactState, formData: FormData): Prom
 
   return {
     status: "success",
-    message: "Inquiry received. We review everything personally and respond directly — usually within one business day.",
+    message: "Inquiry received. We review everything personally and respond directly, usually within one business day.",
   }
 }

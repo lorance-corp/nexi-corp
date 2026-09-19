@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 import { ecosystem } from "@/lib/portfolio"
 
 export const metadata: Metadata = {
-  title: "Network — NEXI Corp",
+  title: "Network · NEXI Corp",
   description:
-    "The NEXI partner marketplace: one front door for CNS programs, qualified deal flow for providers and consultants.",
+    "The NEXI partner network: one front door for CNS programs, qualified deal flow for providers and consultants.",
 }
 
 const forSponsors = [
@@ -20,7 +20,7 @@ const forSponsors = [
   {
     icon: Route,
     title: "Routed, not referred",
-    body: "Work is placed across portfolio companies, study partners, and consultants — matched to the question, not to whoever answered the phone.",
+    body: "Work is placed across portfolio companies, study partners, and consultants, matched to the question rather than to whoever happened to answer the phone.",
   },
   {
     icon: ShieldCheck,
@@ -32,10 +32,11 @@ const forSponsors = [
 export default function NetworkPage() {
   return (
     <>
-      <PageHero eyebrow="Partner Network" title="A marketplace with a focal point.">
+      <PageHero eyebrow="Partner Network" title="A network with a focal point.">
         <p>
-          Dozens of specialists touch a CNS program on its way to the clinic. The NEXI network puts them behind a
-          single relationship — an agency model for neuro translation, anchored by our own companies.
+          Dozens of specialists touch a CNS program on its way to the clinic, and the NEXI network puts every one
+          of them behind a single relationship, an agency model for neuro translation anchored by our own
+          companies.
         </p>
       </PageHero>
 
@@ -63,10 +64,10 @@ export default function NetworkPage() {
               Source deal flow through NEXI.
             </h2>
             <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground text-pretty">
-              CROs, platform companies, and independent consultants join the network to receive qualified, scoped
-              work instead of cold leads. We are connected with many across CNS translation — the network gives that
-              web of relationships a focal point, so the right expertise lands on the right program at the right
-              time.
+              CROs, platform companies, and independent consultants join the network to receive qualified and
+              scoped work instead of cold leads, and because we are already connected across CNS translation, the
+              network gives that web of relationships a focal point so the right expertise lands on the right
+              program at the right time.
             </p>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               <Handshake className="mr-2 inline h-4 w-4 text-primary" aria-hidden />
@@ -78,13 +79,13 @@ export default function NetworkPage() {
               Apply to the network
             </Button>
             <Button
-              render={<Link href="/portfolio" />}
+              render={<Link href="/partners" />}
               nativeButton={false}
               size="lg"
               variant="outline"
               className="rounded-full border-border bg-transparent"
             >
-              See who's in it
+              See the capabilities
             </Button>
           </div>
         </div>
@@ -96,8 +97,8 @@ export default function NetworkPage() {
           Rooted in the state we're building up.
         </h2>
         <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground text-pretty">
-          NEXI is woven into Florida's life science community — the exchanges, summits, and investor networks where
-          this ecosystem gets built.
+          NEXI is woven into Florida's life science community, through the exchanges, summits, and investor
+          networks where this ecosystem actually gets built.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ecosystem.map((e) => (

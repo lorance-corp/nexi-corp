@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk, Space_Mono } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
+import { EngageCta } from '@/components/engage-cta'
 import { SiteFooter } from '@/components/site-footer'
 import './globals.css'
 
@@ -19,33 +20,33 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.nexi-corp.com'),
   title: {
-    default: 'NEXI Corp — Deep Neuro TechBio',
+    default: 'NEXI Corp · Deep Neuro TechBio',
     template: '%s',
   },
   description:
-    'NEXI Corp is the holding company behind NEXI Biotech and the partner network translating living neural systems into deep neuro techbio — spanning longevity, personalized medicine, precision neurology, and brain–computer interfacing.',
+    'NEXI Corp turns the function of human brain circuits into a measured model, the foundation of a new category of neurotechnology spanning longevity, personalized medicine, precision neurology, brain-computer interfacing, biocomputing, digital avatars, defense, and dual-use programs.',
   openGraph: {
     type: 'website',
     url: 'https://www.nexi-corp.com',
     siteName: 'NEXI Corp',
-    title: 'NEXI Corp — Deep Neuro TechBio',
+    title: 'NEXI Corp · Deep Neuro TechBio',
     description:
-      'The nexus of mind and machine: IP holding company for NEXI Biotech and the partner marketplace for CNS translation across eight deeptech domains.',
+      'The nexus of mind and machine: a measured model of how the brain computes, across eight deeptech domains.',
     images: [
       {
-        url: '/images/hero-wide-gen.png',
-        width: 1024,
-        height: 1024,
-        alt: 'NEXI Corp — a translucent brain fused to a circuit substrate',
+        url: '/images/og-nexi-corp.png',
+        width: 1200,
+        height: 630,
+        alt: 'NEXI Corp: a directed three-compartment neural circuit on a microelectrode array, with a single-unit trace',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NEXI Corp — Deep Neuro TechBio',
+    title: 'NEXI Corp · Deep Neuro TechBio',
     description:
-      'The nexus of mind and machine: the holding company and partner marketplace for deep neuro techbio.',
-    images: ['/images/hero-wide-gen.png'],
+      'The nexus of mind and machine: a measured model of how the brain computes.',
+    images: ['/images/og-nexi-corp.png'],
   },
   icons: {
     icon: [
@@ -75,6 +76,7 @@ export default function RootLayout({
         <div className="min-h-screen bg-background">
           <SiteHeader />
           <main>{children}</main>
+          <EngageCta />
           <SiteFooter />
         </div>
         {process.env.NODE_ENV === 'production' && <Analytics />}

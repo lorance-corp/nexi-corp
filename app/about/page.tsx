@@ -6,9 +6,9 @@ import { PageHero } from "@/components/page-hero"
 import { site } from "@/lib/site"
 
 export const metadata: Metadata = {
-  title: "About — NEXI Corp",
+  title: "About · NEXI Corp",
   description:
-    "NEXI Corp (a DBA of Lorance Enterprise Corp) is the IP holding company for NEXI Biotech and the coordinating layer of the NEXI partner network.",
+    "NEXI Corp, a DBA of Lorance Enterprise Corp, holds the intellectual property behind NEXI Biotech and coordinates the NEXI partner network.",
 }
 
 export default function AboutPage() {
@@ -16,9 +16,9 @@ export default function AboutPage() {
     <>
       <PageHero eyebrow="About" title="Holding the IP. Coordinating the network.">
         <p>
-          NEXI Corp — a DBA of Lorance Enterprise Corp — exists to do two things well: steward the intellectual
-          property behind NEXI Biotech, and act as the focal point where partner companies and consultants meet the
-          programs that need them.
+          NEXI Corp, a DBA of Lorance Enterprise Corp, exists to do two things well: steward the intellectual
+          property behind NEXI Biotech, and act as the focal point where partner companies and consultants meet
+          the programs that need them.
         </p>
       </PageHero>
 
@@ -28,17 +28,18 @@ export default function AboutPage() {
             <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">IP holding</p>
             <h2 className="mt-3 font-display text-2xl font-semibold text-foreground">The foundation</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground text-pretty">
-              NEXI Corp holds and develops the intellectual property that powers NEXI Biotech's in vitro human
-              neural modeling platform — keeping the long-term assets stable while the operating companies move
-              fast.
+              NEXI Corp holds and develops the intellectual property behind NEXI Biotech's in vitro human neural
+              modeling platform, which keeps the long-lived assets stable while the operating companies move at
+              the speed their markets demand.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-8">
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">Partner marketplace</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">Partner network</p>
             <h2 className="mt-3 font-display text-2xl font-semibold text-foreground">The connective tissue</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground text-pretty">
               As an agency for neuro translation, NEXI Corp sources deal flow for the network's companies and
-              consultants — one coordinated relationship in a field that usually forces sponsors to manage many.
+              consultants, giving a sponsor one coordinated relationship in a field that otherwise forces them to
+              manage a dozen.
             </p>
           </div>
         </div>
@@ -61,13 +62,13 @@ export default function AboutPage() {
             <p className="mt-1 font-mono text-sm text-muted-foreground">Founder & CEO</p>
             <div className="mt-5 max-w-2xl space-y-4 leading-relaxed text-muted-foreground text-pretty">
               <p>
-                Case founded NEXI to close the gap where CNS programs stall — between promising preclinical science
-                and evidence a clinic can trust. He leads NEXI Corp's portfolio and partner strategy and serves as
-                Founder & CEO of NEXI Biotech, the ecosystem's flagship platform company.
+                Case founded NEXI to close the gap where CNS programs stall, between preclinical science that
+                looks promising and evidence a clinic can act on. He leads NEXI Corp's portfolio and partner
+                strategy and serves as Founder and CEO of NEXI Biotech, the ecosystem's flagship platform company.
               </p>
               <p>
-                Based in Tampa, Florida, he works at the intersection of neuroscience, translational operations, and
-                company building — assembling the network so that no program has to navigate the field alone.
+                Based in Tampa, Florida, he works at the intersection of neuroscience, translational operations,
+                and company building, assembling the network so that no program has to navigate the field alone.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap gap-5 text-sm font-medium">

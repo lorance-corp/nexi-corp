@@ -42,9 +42,14 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link href="/" aria-label="NEXI Corp home">
-          <NexiLogo />
-        </Link>
+        <div className="flex items-baseline gap-2.5">
+          <Link href="/" aria-label="NEXI Corp home">
+            <NexiLogo />
+          </Link>
+          {/* Sits beside the wordmark so it is noticed without being read as
+              part of the sentence that follows it. */}
+          <span className="hidden font-mono text-[0.7rem] text-muted-foreground lg:inline">/neks-eye/</span>
+        </div>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
           {nav.map((item) => (
             <Link

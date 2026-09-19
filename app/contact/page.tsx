@@ -4,8 +4,8 @@ import { ContactForm } from "@/components/contact-form"
 import { site } from "@/lib/site"
 
 export const metadata: Metadata = {
-  title: "Contact — NEXI Corp",
-  description: "Engage NEXI Corp — sponsors, providers, consultants, and investors all start here.",
+  title: "Contact · NEXI Corp",
+  description: "Engage NEXI Corp: sponsors, providers, consultants, and investors all start here.",
 }
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <PageHero eyebrow="Contact" title="Engage NEXI.">
         <p>
           One inbox for the whole ecosystem. Tell us whether you're bringing a program, offering capabilities, or
-          exploring the portfolio — we route it from there.
+          exploring the capabilities, and we route it from there.
         </p>
       </PageHero>
 

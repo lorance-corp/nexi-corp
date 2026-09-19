@@ -22,7 +22,7 @@ const applications: Application[] = [
     tagline: "Extending the healthy lifespan of the brain",
     image: "/images/longevity.png",
     summary:
-      "We treat cognitive aging as an engineering problem — mapping how neural tissue degrades and intervening to preserve function. Living neural models let us test interventions on human-relevant substrates rather than proxies.",
+      "We treat cognitive aging as an engineering problem, mapping how neural tissue degrades and intervening to preserve function, so that a candidate is tested on human-relevant substrates rather than on a proxy for them.",
     points: ["Neural aging models", "Cellular renewal assays", "Cognitive resilience"],
   },
   {
@@ -32,7 +32,7 @@ const applications: Application[] = [
     tagline: "Therapies matched to the individual mind",
     image: "/images/personalized-medicine.png",
     summary:
-      "Patient-derived neural cultures become a personal testbed — screening treatments against an individual's own biology to predict response before a single dose reaches a patient.",
+      "Patient-derived neural cultures become a personal testbed, screening treatments against an individual's own biology to predict response before a single dose reaches a patient.",
     points: ["Patient-derived cultures", "Response prediction", "Targeted therapeutics"],
   },
   {
@@ -42,17 +42,17 @@ const applications: Application[] = [
     tagline: "Resolving disease at the level of the circuit",
     image: "/images/precision-neurology.png",
     summary:
-      "By observing neural circuits with granular precision, we localize dysfunction to specific pathways — turning broad diagnoses into targeted, measurable interventions.",
+      "By observing neural circuits with granular precision we localize dysfunction to specific pathways, which turns a broad diagnosis into a targeted and measurable intervention.",
     points: ["Circuit-level mapping", "Biomarker discovery", "Targeted modulation"],
   },
   {
     id: "brain-computer-interfacing",
-    title: "Brain–Computer Interfacing",
+    title: "Brain-Computer Interfacing",
     icon: Cpu,
     tagline: "The sandbox for the granular function of the human brain",
     image: "/images/bci-gen.png",
     summary:
-      "We create the sandbox to unveil the granular function of the human brain — the substrate that unlocks the mysteries of cognition and the complexities of personality. High-bandwidth interfaces translate neural activity into signal, and signal back into the brain.",
+      "We create the sandbox that unveils the granular function of the human brain, the substrate that unlocks the mysteries of cognition and the complexities of personality, where high-bandwidth interfaces translate neural activity into signal and signal back into the brain.",
     points: ["High-bandwidth interfaces", "Neural decoding", "Cognition & personality"],
   },
   {
@@ -62,7 +62,7 @@ const applications: Application[] = [
     tagline: "Wetware compute at biological efficiency",
     image: "/images/biocomputer-gen.png",
     summary:
-      "Living neural tissue interfaced directly with silicon — wetware compute that learns, adapts, and processes at biological efficiency.",
+      "Living neural tissue interfaced directly with silicon gives wetware compute that learns, adapts, and processes at biological efficiency.",
     points: ["Neuron-on-chip interconnects", "Adaptive in vitro learning", "Ultra-low-power inference"],
   },
   {
@@ -72,7 +72,7 @@ const applications: Application[] = [
     tagline: "Persistent digital representations of the mind",
     image: "/images/digital-avatar-gen.png",
     summary:
-      "High-fidelity neural models that capture individual cognition and behavior — persistent, interactive digital representations of the mind.",
+      "High-fidelity neural models that capture individual cognition and behavior, held as persistent and interactive digital representations of the mind.",
     points: ["Cognitive twins", "Behavioral modeling", "Persistent neural state"],
   },
   {
@@ -92,7 +92,7 @@ const applications: Application[] = [
     tagline: "One substrate, many mandates",
     image: "/images/dual-use-gen.png",
     summary:
-      "Foundational platforms that serve both commercial and national-security missions — one substrate, many mandates.",
+      "Foundational platforms that serve commercial and national-security missions alike, with one substrate carrying many mandates.",
     points: ["Commercial translation", "Sovereign capability", "Controlled deployment"],
   },
 ]
@@ -113,20 +113,9 @@ export function Applications() {
   const current = applications[active]
 
   return (
-    <section id="applications" className="relative border-t border-border py-24">
+    <section id="applications" className="relative pb-24">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">Deeptech applications</p>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance md:text-5xl">
-            One substrate. Eight frontier domains.
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            NEXI Corp advances a single core technology — deep neuro techbio — across the applications where it changes
-            what is computationally and clinically possible.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-6 lg:grid-cols-[300px_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[300px_1fr]">
           {/* Tab rail */}
           <div
             role="tablist"
@@ -178,8 +167,8 @@ export function Applications() {
             <div className="relative aspect-[16/9] overflow-hidden">
               <Image
                 key={current.image}
-                src={current.image || "/placeholder.svg"}
-                alt={`${current.title} — deep neuro techbio application`}
+                src={current.image}
+                alt={`${current.title} on the NEXI substrate`}
                 fill
                 sizes="(min-width: 1024px) 60vw, 100vw"
                 className="animate-rise object-cover"

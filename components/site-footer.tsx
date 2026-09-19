@@ -10,8 +10,8 @@ export function SiteFooter() {
         <div className="max-w-sm">
           <NexiLogo />
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            The neuro translation ecosystem — IP holding company for NEXI Biotech and the partner marketplace where
-            CNS programs meet the teams that move them.
+            Turning the function of human brain circuits into a measured model, and putting that measurement to
+            work for the programs that need it.
           </p>
           <p className="mt-3 text-xs text-muted-foreground">{site.location}</p>
         </div>

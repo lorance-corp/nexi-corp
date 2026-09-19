@@ -15,7 +15,7 @@ const partners: Partner[] = [
     title: "NEXI Biotech Inc.",
     capability: "In vitro human neural modeling",
     blurb:
-      "Our flagship in vitro modeling platform company — functional readouts from living human neural networks.",
+      "Our flagship in vitro modeling platform company, producing functional readouts from living human neural networks.",
     icon: Network,
     flagship: true,
   },
@@ -54,7 +54,7 @@ const partners: Partner[] = [
     title: "AI Drug Discovery · Rare Disease",
     capability: "Computational discovery",
     blurb:
-      "Computational AI discovery focused on rare disease — surfacing candidates traditional pipelines pass over.",
+      "Computational AI discovery focused on rare disease, surfacing the candidates that traditional pipelines pass over.",
     icon: Sparkles,
   },
 ]
@@ -63,12 +63,12 @@ const steps = [
   {
     n: "01",
     title: "Bring the program",
-    body: "One conversation about the translational question in front of you — no need to know which vendor, model, or method you need.",
+    body: "One conversation about the translational question in front of you, with no need to know in advance which vendor, model, or method the answer will require.",
   },
   {
     n: "02",
     title: "We assemble the team",
-    body: "We scope the work and route it across the network — platform companies, study partners, and consultants matched to the question.",
+    body: "We scope the work and route it across the network, to the platform companies, study partners, and consultants matched to the question.",
   },
   {
     n: "03",
@@ -79,22 +79,10 @@ const steps = [
 
 export function Partners() {
   return (
-    <section id="partners" className="relative border-t border-border py-24">
+    <section id="partners" className="relative pb-24">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">The ecosystem · Agency model</p>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance md:text-5xl">
-            One network. Every layer of translation.
-          </h2>
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            NEXI Corp is the marketplace that connects CNS programs with vetted partners — modeling, studies, histology,
-            discovery, and the consultants who tie it together. Partner companies are listed by capability; identities
-            are shared once you engage — relationships in this network are earned, not scraped.
-          </p>
-        </div>
-
-        {/* Partner marketplace grid */}
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {/* Partner capability grid */}
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {partners.map((p) => (
             <div
               key={p.title}
@@ -143,8 +131,8 @@ export function Partners() {
             A focal approach to a fragmented field.
           </h3>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            CNS translation is scattered across dozens of specialists. NEXI Corp turns that sprawl into a single,
-            coordinated front door.
+            CNS translation is scattered across dozens of specialists, and NEXI Corp turns that sprawl into a
+            single coordinated front door where one relationship covers the whole path to the clinic.
           </p>
         </div>
 

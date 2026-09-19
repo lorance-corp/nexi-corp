@@ -17,10 +17,10 @@ export function Marketplace() {
             The marketplace is opening.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            NEXI Corp is the marketplace for comprehensive services across these domains — one engagement, every
-            capability in the network. Our storefronts on scientist.com and scienceexchange.com are coming online;
-            ask us about them. For the best savings, engage us directly — direct work skips platform fees and routes
-            straight to the right team.
+            NEXI Corp is the marketplace for comprehensive services across these domains, so that a single
+            engagement reaches every capability in the network. Our storefronts on scientist.com and
+            scienceexchange.com are coming online; ask us about them. For the best savings engage us directly,
+            because direct work skips the platform fee and routes straight to the team that will run it.
           </p>
         </div>
 
@@ -37,8 +37,8 @@ export function Marketplace() {
             <BadgeCheck className="h-6 w-6 text-primary" strokeWidth={1.5} aria-hidden />
             <h3 className="mt-4 font-display text-lg font-semibold text-foreground">Direct = best savings</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-              Reaching out directly always gets the best pricing — no platform overhead, scoped by the people who
-              will actually run the work.
+              Reaching out directly always gets the best pricing, with no platform overhead, scoped by the people
+              who will actually run the work.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-7">
